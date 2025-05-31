@@ -40,22 +40,22 @@ const TestimonialVideos = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white pt-[8vh]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-merriweather text-3xl md:text-5xl font-bold text-primary mb-6">
+          <h2 className="font-poppins text-3xl md:text-5xl font-bold text-primary mb-6">
             What Ottawa Homeowners Are Saying
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
             Real clients, real transformations, real satisfaction
           </p>
         </div>
         
         {/* Video Testimonials */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-12 mb-16 max-w-4xl mx-auto">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
-              <div className="aspect-[9/16] max-h-96 bg-gray-900 relative">
+            <div key={testimonial.id} className="text-center">
+              <div className="aspect-[9/16] max-h-[500px] bg-gray-900 relative rounded-2xl overflow-hidden shadow-lg mb-6">
                 <video 
                   controls
                   className="w-full h-full object-cover"
@@ -65,13 +65,13 @@ const TestimonialVideos = () => {
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div className="p-6">
+              <div>
                 <h3 className="font-poppins text-lg font-bold text-primary mb-2">
                   {testimonial.name}
                 </h3>
                 <p className="text-accent font-medium mb-2">{testimonial.location}</p>
                 <p className="text-sm text-gray-600 mb-3">{testimonial.project}</p>
-                <blockquote className="text-gray-700 italic">
+                <blockquote className="text-gray-700 italic max-w-md mx-auto">
                   "{testimonial.quote}"
                 </blockquote>
               </div>
@@ -80,11 +80,11 @@ const TestimonialVideos = () => {
         </div>
         
         {/* Written Testimonials */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
           {writtenTestimonials.map((testimonial, index) => (
             <div key={index} className="bg-primary text-white p-6 rounded-xl">
               <div className="text-accent text-4xl mb-4">"</div>
-              <blockquote className="text-gray-200 mb-4 leading-relaxed">
+              <blockquote className="text-gray-200 mb-4 leading-relaxed max-w-xs mx-auto">
                 {testimonial.quote}
               </blockquote>
               <div className="border-t border-white/20 pt-4">
@@ -96,13 +96,12 @@ const TestimonialVideos = () => {
         </div>
         
         {/* Social Proof */}
-        <div className="mt-16 text-center">
+        <div className="text-center">
           <div className="bg-accent/10 border border-accent rounded-2xl p-8 max-w-3xl mx-auto">
             <div className="flex justify-center items-center space-x-8 mb-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-accent">4.9/5</div>
                 <div className="text-sm text-gray-600">Average Rating</div>
-                <div className="text-accent">★★★★★</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-accent">100+</div>
@@ -113,7 +112,7 @@ const TestimonialVideos = () => {
                 <div className="text-sm text-gray-600">Referral Rate</div>
               </div>
             </div>
-            <p className="text-gray-600">
+            <p className="text-gray-600 max-w-2xl mx-auto">
               Join hundreds of satisfied Ottawa homeowners who chose Urbano Design for their premium surface installation.
             </p>
           </div>

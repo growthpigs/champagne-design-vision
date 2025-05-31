@@ -9,7 +9,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden pt-[7vh]">
       {/* Background Video */}
       <video 
         autoPlay 
@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="animate-fade-in">
           <p className="text-accent font-medium mb-4 tracking-wide text-sm uppercase">FROM PINTEREST BOARD TO DREAM HOME</p>
           
-          <h1 className="font-merriweather text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
+          <h1 className="font-merriweather text-4xl md:text-5xl lg:text-6xl leading-tight mb-8">
             Apply For Your 'Champagne Design Consultation' With Ottawa's Top Remodeling & Additions Firm
           </h1>
           

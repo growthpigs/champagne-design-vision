@@ -26,18 +26,18 @@ const EpicProjectsGrid = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-gray-50 pt-[8vh]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-merriweather text-3xl md:text-5xl font-bold text-primary mb-6">
+          <h2 className="font-poppins text-3xl md:text-5xl font-bold text-primary mb-6">
             Epic Surface Projects For Ottawa Homeowners Who Want To Make Their Best Investment - Ever
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
             Urbano Design is Ottawa's premier surface installation firm. We're the right fit for you if...
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((project, index) => (
             <div 
               key={index}
@@ -47,7 +47,7 @@ const EpicProjectsGrid = () => {
               <h3 className="font-poppins text-xl font-bold text-primary mb-4">
                 {project.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed max-w-2xl">
                 {project.description}
               </p>
             </div>
