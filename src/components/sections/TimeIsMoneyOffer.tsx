@@ -3,11 +3,8 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 
 const TimeIsMoneyOffer = () => {
-  const scrollToConsultation = () => {
-    const element = document.getElementById('consultation-application');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const redirectToQuiz = () => {
+    window.open('https://urbano-design.scoreapp.com/', '_blank');
   };
 
   const benefits = [
@@ -61,7 +58,7 @@ const TimeIsMoneyOffer = () => {
               </div>
               
               <Button 
-                onClick={scrollToConsultation}
+                onClick={redirectToQuiz}
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 text-lg rounded-lg transition-all transform hover:scale-105 w-full"
               >

@@ -14,6 +14,10 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const redirectToQuiz = () => {
+    window.open('https://urbano-design.scoreapp.com/', '_blank');
+  };
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -32,7 +36,7 @@ const Header = () => {
           <img 
             src="https://p129.p0.n0.cdn.zight.com/items/6qupXeOG/12bd680e-4414-4664-a182-41b46dce86e9.webp" 
             alt="Urbano Design" 
-            className="h-8 w-auto"
+            className="h-16 w-auto"
           />
         </div>
 
@@ -66,7 +70,7 @@ const Header = () => {
 
         {/* CTA Button */}
         <Button 
-          onClick={() => scrollToSection('consultation-application')}
+          onClick={redirectToQuiz}
           className="hidden md:block bg-accent hover:bg-accent/90 text-white font-semibold px-6 py-3 rounded-lg transition-all transform hover:scale-105"
         >
           APPLY FOR YOUR FREE DESIGN CONSULT
@@ -114,7 +118,7 @@ const Header = () => {
               Contact
             </button>
             <Button 
-              onClick={() => scrollToSection('consultation-application')}
+              onClick={redirectToQuiz}
               className="w-full bg-accent hover:bg-accent/90 text-white font-semibold mt-4"
             >
               APPLY FOR YOUR FREE DESIGN CONSULT

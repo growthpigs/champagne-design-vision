@@ -3,11 +3,10 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/sections/HeroSection';
 import DearHomeonwerLetter from '@/components/sections/DearHomeonwerLetter';
 import EpicProjectsGrid from '@/components/sections/EpicProjectsGrid';
-import BeforeAfterCarousel from '@/components/sections/BeforeAfterCarousel';
+import ProjectGallery from '@/components/sections/ProjectGallery';
 import TimeIsMoneyOffer from '@/components/sections/TimeIsMoneyOffer';
 import ThreeWayComparison from '@/components/sections/ThreeWayComparison';
 import DeliveryExperience from '@/components/sections/DeliveryExperience';
-import ConsultationApplication from '@/components/sections/ConsultationApplication';
 import TeamProfiles from '@/components/sections/TeamProfiles';
 import TestimonialVideos from '@/components/sections/TestimonialVideos';
 import FAQAccordion from '@/components/sections/FAQAccordion';
@@ -20,11 +19,10 @@ const Index = () => {
       <HeroSection />
       <DearHomeonwerLetter />
       <EpicProjectsGrid />
-      <BeforeAfterCarousel />
+      <ProjectGallery />
       <TimeIsMoneyOffer />
       <ThreeWayComparison />
       <DeliveryExperience />
-      <ConsultationApplication />
       <TeamProfiles />
       <TestimonialVideos />
       <FAQAccordion />

@@ -1,17 +1,15 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Check } from 'lucide-react';
 
 const HeroSection = () => {
-  const scrollToConsultation = () => {
-    const element = document.getElementById('consultation-application');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const redirectToQuiz = () => {
+    window.open('https://urbano-design.scoreapp.com/', '_blank');
   };
 
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
       {/* Background Video */}
       <video 
         autoPlay 
@@ -29,38 +27,39 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
         <div className="animate-fade-in">
-          <p className="text-accent font-medium mb-4 tracking-wide">OTTAWA'S PREMIER SURFACE INSTALLATION</p>
+          <p className="text-accent font-medium mb-4 tracking-wide text-sm uppercase">FROM PINTEREST BOARD TO DREAM HOME</p>
           
-          <h1 className="font-merriweather text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-            Museum-Grade<br />
-            <span className="text-accent">Craftsmanship</span><br />
-            For Your Forever Home
+          <h1 className="font-merriweather text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
+            Apply For Your 'Champagne Design Consultation' With Ottawa's Top Remodeling & Additions Firm
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Dekton • Laminam • MaxFine certified installers serving discerning Ottawa homeowners
-            who demand precision, beauty, and lifetime value.
-          </p>
+          <div className="mb-8 space-y-3 max-w-2xl mx-auto">
+            <div className="flex items-center justify-center text-lg">
+              <Check className="text-accent mr-3 h-5 w-5" />
+              <span>On time & on budget guarantee</span>
+            </div>
+            <div className="flex items-center justify-center text-lg">
+              <Check className="text-accent mr-3 h-5 w-5" />
+              <span>Every home design is unique & on trend</span>
+            </div>
+            <div className="flex items-center justify-center text-lg">
+              <Check className="text-accent mr-3 h-5 w-5" />
+              <span>Design to construction, we look after everything</span>
+            </div>
+          </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col items-center">
             <Button 
-              onClick={scrollToConsultation}
+              onClick={redirectToQuiz}
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 text-lg rounded-lg transition-all transform hover:scale-105 shadow-xl"
+              className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 text-lg rounded-lg transition-all transform hover:scale-105 shadow-xl mb-4"
             >
-              Book Your Free Champagne Design Consult
+              APPLY FOR YOUR FREE DESIGN CONSULT
             </Button>
             
-            <p className="text-sm text-gray-300 sm:ml-4">
-              ★★★★★ Rated by 100+ Ottawa Homeowners
+            <p className="text-sm text-gray-300 italic">
+              "Timely. Efficient. Transparent." — Bryan
             </p>
-          </div>
-        </div>
-        
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
           </div>
         </div>
       </div>
