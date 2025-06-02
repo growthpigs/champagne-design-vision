@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Settings, Users, Clock, TrendingUp } from 'lucide-react';
 
 const DeliveryExperience = () => {
   const redirectToQuiz = () => {
@@ -12,26 +11,22 @@ const DeliveryExperience = () => {
     {
       number: "1",
       title: "Design Comes First",
-      description: "We've pioneered a material-first process matching your vision with certified surface expertise.",
-      icon: <Settings className="w-8 h-8" />
+      description: "We've pioneered a material-first process matching your vision with certified surface expertise."
     },
     {
       number: "2", 
       title: "Every Expert Under One Roof",
-      description: "Our team includes certified installers, project manager & material specialists—all expertise from one Ottawa firm.",
-      icon: <Users className="w-8 h-8" />
+      description: "Our team includes certified installers, project manager & material specialists—all expertise from one Ottawa firm."
     },
     {
       number: "3",
       title: "On Budget, On Time, On Trend", 
-      description: "We guarantee your installation within agreed timeline and budget—backed by $2M insurance.",
-      icon: <Clock className="w-8 h-8" />
+      description: "We guarantee your installation within agreed timeline and budget—backed by $2M insurance."
     },
     {
       number: "4",
       title: "Your Home's Full Potential & Value",
-      description: "Premium surfaces are your #1 value investment. We ensure maximum return on every dollar spent.",
-      icon: <TrendingUp className="w-8 h-8" />
+      description: "Premium surfaces are your #1 value investment. We ensure maximum return on every dollar spent."
     }
   ];
 
@@ -42,7 +37,7 @@ const DeliveryExperience = () => {
           <h2 className="font-poppins text-3xl md:text-5xl font-bold text-primary mb-6">
             Our Four-Step Process
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Our proven 4-step process ensures flawless execution from design to completion
           </p>
         </div>
@@ -52,17 +47,14 @@ const DeliveryExperience = () => {
             <div key={index} className="relative">
               {/* Connector Line */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-accent/30 transform translate-x-4 z-0"></div>
+                <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-accent/30 transform translate-x-4 z-0"></div>
               )}
               
               <div className="relative z-10 text-center">
                 {/* Step Number Circle */}
-                <div className="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">
                   {step.number}
                 </div>
-                
-                {/* Icon */}
-                <div className="text-accent mb-4 flex justify-center">{step.icon}</div>
                 
                 {/* Content */}
                 <h3 className="font-poppins text-xl font-bold text-primary mb-4 max-w-xs mx-auto">
@@ -105,7 +97,7 @@ const DeliveryExperience = () => {
             size="lg"
             className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 text-lg rounded-lg transition-all transform hover:scale-105 shadow-xl"
           >
-            START YOUR DESIGN CONSULTATION
+            BOOK YOUR CHAMPAGNE DESIGN CONSULTATION
           </Button>
         </div>
       </div>
