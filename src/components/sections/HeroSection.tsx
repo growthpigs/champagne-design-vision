@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
@@ -9,7 +8,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden pt-[7vh]">
+    <section className="relative h-[75vh] min-h-[600px] flex items-center justify-center overflow-hidden pt-[12vh] mb-8">
       {/* Background Video */}
       <video 
         autoPlay 
@@ -27,22 +26,22 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
         <div className="animate-fade-in">
-          <p className="text-accent font-medium mb-4 tracking-wide text-sm uppercase">FROM PINTEREST BOARD TO DREAM HOME</p>
+          <p className="text-accent font-medium mb-4 tracking-wide text-base uppercase mt-8">FROM PINTEREST BOARD TO DREAM HOME</p>
           
           <h1 className="font-merriweather text-4xl md:text-5xl lg:text-6xl leading-tight mb-8">
             Apply For Your 'Champagne Design Consultation' With Ottawa's Top Remodeling & Additions Firm
           </h1>
           
-          <div className="mb-8 space-y-3 max-w-2xl mx-auto">
-            <div className="flex items-center justify-center text-lg">
+          <div className="mb-8 space-y-1.5 flex flex-col items-center">
+            <div className="flex items-center justify-start text-lg">
               <Check className="text-accent mr-3 h-5 w-5" />
               <span>On time & on budget guarantee</span>
             </div>
-            <div className="flex items-center justify-center text-lg">
+            <div className="flex items-center justify-start text-lg">
               <Check className="text-accent mr-3 h-5 w-5" />
               <span>Every home design is unique & on trend</span>
             </div>
-            <div className="flex items-center justify-center text-lg">
+            <div className="flex items-center justify-start text-lg">
               <Check className="text-accent mr-3 h-5 w-5" />
               <span>Design to construction, we look after everything</span>
             </div>
@@ -52,12 +51,12 @@ const HeroSection = () => {
             <Button 
               onClick={redirectToQuiz}
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 text-lg rounded-lg transition-all transform hover:scale-105 shadow-xl mb-4"
+              className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-8 text-lg rounded-lg transition-all transform hover:scale-105 shadow-xl mb-4"
             >
               APPLY FOR YOUR FREE DESIGN CONSULT
             </Button>
             
-            <p className="text-sm text-gray-300 italic">
+            <p className="text-sm text-gray-300 italic mb-16">
               "Timely. Efficient. Transparent." — Bryan
             </p>
           </div>

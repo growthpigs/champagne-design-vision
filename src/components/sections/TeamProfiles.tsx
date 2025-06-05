@@ -1,22 +1,21 @@
-
 import React from 'react';
 
 const TeamProfiles = () => {
   const team = [
     {
-      name: "Justin Urbano",
+      name: "Justin Richard",
       title: "Master Craftsman & Founder",
       certifications: ["Dekton Certified Master", "Laminam Elite Installer", "MaxFine Specialist"],
       experience: "15+ years, 427 homes completed",
-      image: "https://p129.p0.n0.cdn.zight.com/items/YEuYJoGB/3c49dd27-1d2b-4568-a825-ba63cc6b011f.jpg",
+      image: "https://p129.p0.n0.cdn.zight.com/items/bLu2vzRl/21577f6e-7f33-4fb3-b858-dcbb0a339da8.png?v=7a2a693f0bfa0d74d047ea6f92965abe",
       quote: "Every surface tells a story. My job is to make sure it's a beautiful one that lasts forever."
     },
     {
-      name: "Wendy Urbano", 
+      name: "Wendy Richard", 
       title: "Design Director & Co-Founder",
       certifications: ["Interior Design Certified", "Project Management Professional", "Material Specialist"],
       experience: "12+ years, 300+ design projects",
-      image: "https://p129.p0.n0.cdn.zight.com/items/YEuYJoGB/3c49dd27-1d2b-4568-a825-ba63cc6b011f.jpg",
+      image: "https://p129.p0.n0.cdn.zight.com/items/xQumJKLk/d87c9f3a-7e38-4fda-b049-2cc6e4651788.png?v=27e3e127613105ee0039e2b455d8e536",
       quote: "Great design isn't just about beauty—it's about creating spaces that enhance your daily life."
     }
   ];

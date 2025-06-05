@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -12,7 +11,8 @@ const DearHomeonwerLetter = () => {
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="font-merriweather text-3xl md:text-4xl text-primary mb-4 max-w-4xl mx-auto">
-            A Personal Message From Justin, Certified Dekton Master
+            A Personal Message From Justin,<br />
+            Certified Dekton Master
           </h2>
         </div>
         
@@ -66,15 +66,15 @@ const DearHomeonwerLetter = () => {
             
             <div className="flex flex-col md:flex-row items-center justify-between border-t border-gray-200 pt-8">
               <div>
-                <div className="font-script text-2xl text-accent mb-2">Justin Urbano</div>
+                <div className="font-script text-2xl text-accent mb-2">Justin Richard</div>
                 <p className="font-semibold text-primary">Master Craftsman & Founder</p>
                 <p className="text-sm text-gray-600">Dekton Certified | Laminam Elite | MaxFine Specialist</p>
               </div>
               
               <div className="mt-6 md:mt-0">
                 <img 
-                  src="https://p129.p0.n0.cdn.zight.com/items/YEuYJoGB/3c49dd27-1d2b-4568-a825-ba63cc6b011f.jpg" 
-                  alt="Justin Urbano, Certified Master Craftsman" 
+                  src="https://p129.p0.n0.cdn.zight.com/items/bLu2vzRl/21577f6e-7f33-4fb3-b858-dcbb0a339da8.png?v=7a2a693f0bfa0d74d047ea6f92965abe" 
+                  alt="Justin Richard, Certified Master Craftsman" 
                   className="w-24 h-24 rounded-full object-cover border-2 border-accent"
                 />
               </div>

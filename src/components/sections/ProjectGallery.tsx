@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const ProjectGallery = () => {
@@ -19,7 +18,7 @@ const ProjectGallery = () => {
       image: "/lovable-uploads/a818d696-4b66-49ad-85ac-01a96c9f95dc.png"
     },
     {
-      title: "Orleans Custom Kitchen",
+      title: "Richard Family Dock",
       material: "Premium Stone",
       image: "/lovable-uploads/94a56ce7-2844-446b-9a17-5efb300cdb7a.png"
     },

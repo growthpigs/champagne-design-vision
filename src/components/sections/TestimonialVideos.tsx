@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const TestimonialVideos = () => {
@@ -39,6 +38,11 @@ const TestimonialVideos = () => {
     }
   ];
 
+  const handleVideoInteraction = (event: React.MouseEvent<HTMLVideoElement>) => {
+    const video = event.currentTarget;
+    video.muted = false;
+  };
+
   return (
     <section className="py-20 bg-white pt-[8vh]">
       <div className="max-w-7xl mx-auto px-6">
@@ -55,10 +59,15 @@ const TestimonialVideos = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-16 max-w-4xl mx-auto">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="text-center">
-              <div className="aspect-[9/16] max-h-[500px] bg-gray-900 relative rounded-2xl overflow-hidden shadow-lg mb-6">
+              <div className="aspect-[9/16] max-h-[500px] bg-gray-900 relative rounded-2xl overflow-hidden shadow-lg mb-6 mx-auto">
                 <video 
-                  controls
-                  className="w-full h-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  onClick={handleVideoInteraction}
+                  onTouchStart={handleVideoInteraction}
+                  className="w-full h-full object-cover cursor-pointer"
                   poster="/api/placeholder/300/400"
                 >
                   <source src={testimonial.video} type="video/mp4" />
